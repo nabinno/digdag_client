@@ -9,7 +9,7 @@ module Digdag
       :debug_net_http
     ].freeze
 
-    DEFAULT_ENDPOINT = 'http://localhost:65432/'
+    DEFAULT_ENDPOINT = "http://#{ENV['DIGDAG_HOST']}:#{ENV['DIGDAG_PORT']}/"
     DEFAULT_USE_LOGGER = false
     DEFAULT_DEBUG_NET_HTTP = false
 
